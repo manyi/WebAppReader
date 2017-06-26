@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=0" />
+	<meta name="format-detection" contextmenu="telephone=no" />
+	<title>WebApp</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" /> 
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />  
+	<script type="text/javascript">
+		(function(doc,win){
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' :'resize',
+				recalc = function(){
+					var baseFontSize = 100;
+					var designWidth = 640;
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth)return;
+					docEl.style.fontSize = baseFontSize * (clientWidth / designWidth ) + 'px';
+				};
+				if(!doc.addEventListener)return;
+				win.addEventListener(resizeEvt,recalc,false);
+				doc.addEventListener('DOMContentLoaded',recalc,false);
+		})(document,window)
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="container-bg">
+			<div class="bg-top"></div>
+			<div class="bg-mid"></div>
+			<div class="bg-bottom"></div>
+		</div>
+		<div class="u-nav hide" id="u_nav">
+			<a href="#"></a>
+			<span>返回书架</span>
+		</div>
+		<div class="u-content" id="b_content"> 
+			<h4 >完美世界</h4>
+			<div class="b-detail" id="b_detail">
+				<p>在高人气小说《完美世界》中，各种族之间的斗智斗勇、亦敌亦友等种种情节给读者留下了深刻的印象，小说作者辰东表示会密切关注《完美国际2》游戏的内容，将会把游戏过程中发生的有趣故事有机的植入到后续的小说当中。那么你是否愿意化身其中一员，亲身参与到与完美世界的激烈对抗中，切身演绎游戏中纷繁复杂的人物关系，真正成为主角，与各位盟友谱写新的篇章？而这一切你将会在后续的小说中找到答案。</p>
+				<p>在高人气小说《完美世界》中，各种族之间的斗智斗勇、亦敌亦友等种种情节给读者留下了深刻的印象，小说作者辰东表示会密切关注《完美国际2》游戏的内容，将会把游戏过程中发生的有趣故事有机的植入到后续的小说当中。那么你是否愿意化身其中一员，亲身参与到与完美世界的激烈对抗中，切身演绎游戏中纷繁复杂的人物关系，真正成为主角，与各位盟友谱写新的篇章？而这一切你将会在后续的小说中找到答案。</p>
+				<p>在高人气小说《完美世界》中，各种族之间的斗智斗勇、亦敌亦友等种种情节给读者留下了深刻的印象，小说作者辰东表示会密切关注《完美国际2》游戏的内容，将会把游戏过程中发生的有趣故事有机的植入到后续的小说当中。那么你是否愿意化身其中一员，亲身参与到与完美世界的激烈对抗中，切身演绎游戏中纷繁复杂的人物关系，真正成为主角，与各位盟友谱写新的篇章？而这一切你将会在后续的小说中找到答案。</p>
+				<p>在高人气小说《完美世界》中，各种族之间的斗智斗勇、亦敌亦友等种种情节给读者留下了深刻的印象，小说作者辰东表示会密切关注《完美国际2》游戏的内容，将会把游戏过程中发生的有趣故事有机的植入到后续的小说当中。那么你是否愿意化身其中一员，亲身参与到与完美世界的激烈对抗中，切身演绎游戏中纷繁复杂的人物关系，真正成为主角，与各位盟友谱写新的篇章？而这一切你将会在后续的小说中找到答案。</p>
+			</div>
+			<div class="u-btn">
+				<ul class="u-btn-list">
+					<li id='btn-prev'>上一章</li><li id="btn_next">下一章</li>
+				</ul>
+			</div>
+		</div>
+		<div class="u-nav-bottom-menu-bg hide"></div>
+		<div class="u-nav-bottom-menu hide" id="u_nav_bottom_menu">
+			<div class="menu-item">
+				<span class="clearfix">字号</span> 
+				<div class="item-btn clearfix">
+					<button class="btn-big-fz" id="btn_big_fz">大</button>
+					<button class="btn-sm-fz" id="btn_sm_fz">小</button> 
+				</div>
+			</div>
+			<div class="menu-item">
+				<span class="clearfix">背景</span>
+				<div class="item-bg ">
+					<div class="bg red"></div>
+					<div class="bg blue"></div>
+					<div class="bg yellow"></div>
+				</div>
+			</div>
+		</div>
+		<div class="u-nav-bottom hide" id="u_nav_bottom"> 
+			<a href="#" class="item calalog">目录</a>
+			<a href="#" class="item fzfz ">字体</a>
+			<a href="#" class="item night">夜间</a> 
+			<!-- <div class="item">
+				<div class="item-calalog"></div>
+				<a href="#">目录</a> 
+			</div>
+			 <div class="item">
+				<div class="item-fz"></div>
+				<a href="#">字体</a> 
+			</div>
+			<div class="item">
+				<div class="item-night"></div>
+				<a href="#">夜间</a> 
+			</div> -->
+		</div>
+	</div>
+	<script type="text/javascript" src="lib/zepto.min.js"></script>
+	<script type="text/javascript">
+		window.jQuery = $;
+	</script>
+	<script type="text/javascript" src="lib/jquery.base64.js"></script>
+	<script type="text/javascript" src="lib/jquery.jsonp.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

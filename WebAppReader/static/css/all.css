@@ -1,0 +1,12 @@
+.clearfix:after{
+	content: " ";
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+ 
+html{
+	font-family: '微软雅黑';
+}

@@ -1,0 +1,158 @@
+<style type="text/css" media="screen">
+	.top-hot{
+		width: 100%;
+	}
+	.top-hot_head{
+		line-height: 44px;
+		padding-left:12px;
+		border-bottom: 1px solid #eee;
+		border-left: 6px solid #FFAB18;
+	}
+	.top-hot_list{
+		width: 100%;
+		margin: 15px 14px 5px;
+	}
+	 
+	.top-hot_list{
+		width: 100%;
+		font-size: 0; 
+	/* 	display: flex; */
+	}
+	.top-hot_list li{  
+		/*flex: 1;*/
+		 width: 33.3%;
+		display: inline-block; 
+		box-sizing: border-box;  
+		vertical-align: top;
+		line-height: 1;
+		margin-bottom: 9px;
+ 
+	}  
+	.top-hot_list li:nth-child(3n+1){
+		text-align: left;
+	}
+	.top-hot_list li:nth-child(3n+2){
+		text-align-last: center;
+	}
+	.top-hot_list li:nth-child(3n+3){
+		text-align: right;
+	}
+	.top-hot_book{
+		width: 86px;
+		height: 156px;  
+		margin-bottom: 10px;
+		overflow: hidden;  
+	}
+	.top-hot_cover{
+		width: 86px;
+		height: 116px;
+		overflow: hidden;
+		box-shadow: 0 6px 5px -3px #aaa;
+		position: relative;
+	}
+	.top-hot_cover img{
+		width: 100%;
+		height: 100%;
+	}
+	.top-hot_info{
+		padding-top: 10px;
+		font-size: 13px;
+		color: #8d8d8d;
+		line-height: 1.2; 
+	}
+	.book_free{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		line-height: 1.2;
+		background-color: #49ab3f;
+		width: 100%;
+		font-size: 1.4rem;
+		color: #fff;
+		text-align: center;
+		-webkit-transform-origin: top center;
+		-webkit-transform: translateX(50%) rotate(45deg) translateY(50%) scale(.8);
+	}
+	.book_free:before{
+		content: '\9650\514d';
+	}
+	.top-hot_bottom{
+		line-height: 55px;
+		border-top: 1px solid #eee;
+		text-align: center;
+		border-bottom: 10px solid #f7f7f7;
+	}
+</style>
+<div class="top-hot">
+	<div class="top-hot_head">
+		<h4>本周最火</h4>
+	</div>
+	<ul class="top-hot_list clearfix">
+		<li>
+			<div class="top-hot_book">
+				<div class="top-hot_cover">
+					<img  src="/static/img/bookimg.jpg" />
+					<div class="book_free">
+						
+					</div>
+				</div>
+				<div class="top-hot_info">
+					<p >逆天透视眼</p>
+				</div> 
+			</div>
+		</li> 
+		<li>
+			<div class="top-hot_book">
+				<div class="top-hot_cover">
+					<img  src="/static/img/bookimg.jpg" />
+				</div>
+				<div class="top-hot_info">
+					<p >逆天透视眼</p>
+				</div> 
+			</div>
+		</li> 
+		<li>
+			<div class="top-hot_book">
+				<div class="top-hot_cover">
+					<img  src="/static/img/bookimg.jpg" />
+				</div>
+				<div class="top-hot_info">
+					<p >逆天透视眼逆天透视眼逆天透视眼1231231</p>
+				</div> 
+			</div>
+		</li> 
+		<li>
+			<div class="top-hot_book">
+				<div class="top-hot_cover">
+					<img  src="/static/img/bookimg.jpg" />
+				</div>
+				<div class="top-hot_info">
+					<p >逆天透视眼</p>
+				</div> 
+			</div>
+		</li> 
+		<li>
+			<div class="top-hot_book">
+				<div class="top-hot_cover">
+					<img  src="/static/img/bookimg.jpg" />
+				</div>
+				<div class="top-hot_info">
+					<p >逆天透视眼</p>
+				</div> 
+			</div>
+		</li> 
+		<li>
+			<div class="top-hot_book">
+				<div class="top-hot_cover">
+					<img  src="/static/img/bookimg.jpg" />
+				</div>
+				<div class="top-hot_info">
+					<p >逆天透视眼</p>
+				</div> 
+			</div>
+		</li> 
+	</ul>
+	<div class="top-hot_bottom">
+		<a href="/free"><p>查看更多&gt;&gt;</p></a>
+	</div>
+</div>
