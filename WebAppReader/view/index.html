@@ -7,23 +7,35 @@
 	<title>index</title>
 	<link rel="stylesheet" type="text/css" href="/static/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="/static/css/all.css" />
+	<style type="text/css" media="screen">
+		
+	</style>				
 </head> 
 <body>
-	<div id="root">
+	<div id="app" style="width: 658px;overflow: hidden;height: 100%;">
 		<% include include/header.html%>
-		<div>
-			<% include include/index-top.html%>
-			<% include include/index-hot.html%>
-			<% include include/index-recommend.html%>
-			
-			<% include include/index-male.html%>
-			<% include include/index-famale.html%>
-			<% include include/index-free.html%>
-			<% include include/index-bottom.html%>
+		<div  style="width: 1316px;transition-duration:.5s;transform: translate3d(0px,0px,0px);height: 100%;"> 
+			<div class="container-warp" style="width: 658px;float: left;top:0;">  
+				<div class="container-scroll"> 
+					<% include include/index-top.html%>
+					<% include include/index-hot.html%>
+					<% include include/index-recommend.html%> 
+					<% include include/index-male.html%>
+					<% include include/index-famale.html%>
+					<% include include/index-free.html%>
+					<% include include/index-bottom.html%>
+				</div>			
+			</div>
+			<div class="container-warp" style="width: 658px;float: left;top:0;">  
+				<div class="container-scroll">
+					<% include include/index-shelf.html %>
+				</div>
+			</div>
 		</div>
+		
 	</div>
 </body>
 	<script type="text/javascript" src="/static/js/vue.js"></script>
 	<script type="text/javascript" src="/static/js/zepto.js"></script>
-	<script type="text/javascript" src="/static/js/pages/index.js"></script>
+	<script type="text/javascript" src="/static/js/pages/index.js"></script> 
 </html>
